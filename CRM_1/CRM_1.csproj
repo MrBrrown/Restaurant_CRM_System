@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MySql.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="bootstrap" />
+    <None Remove="Models\" />
+    <None Remove="Pages\Stock\" />
+    <None Remove="Services\" />
+    <None Remove="Services\Component\" />
+    <None Remove="Services\ComponentRep\" />
+    <None Remove="Services\ProductRep\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="6.0.7" />
+    <PackageReference Include="bootstrap" Version="5.2.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Pages\Stock\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\ComponentRep\" />
+    <Folder Include="Services\ProductRep\" />
+  </ItemGroup>
+</Project>
